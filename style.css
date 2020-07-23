@@ -1,0 +1,487 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Gothic;
+}
+
+/*-----------------Navigation------------------*/
+#nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-brand img {
+  height: 45px;
+  padding-left: 30px;
+}
+
+.navbar-nav li {
+  padding: 0 10px;
+}
+
+.navbar-nav li a {
+  float: right;
+  text-align: left;
+}
+
+#nav-bar ul li a:hover {
+  color: #007bff !important;
+}
+
+.navbar {
+  background: rgb(3, 3, 3);
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/*-----------------slider---------------*/
+#slider {
+  width: 100%;
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial !important;
+}
+
+.carousel-caption h5 {
+  color: white;
+  font-size: 42px;
+  font-style: italic;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+
+.carousel-caption span {
+  background-color: #007bff;
+  border: 3px solid;
+  border-radius: 16px;
+}
+
+.carousel-caption p {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+
+/*---------About-----------*/
+#about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #555;
+}
+
+#about .btn {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.about-content {
+  padding-top: 20px;
+}
+
+.skills-bar p {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.progress-bar {
+  border-radius: 16px;
+}
+
+.progress {
+  border-radius: 16px !important;
+  margin-bottom: 20px;
+}
+
+/*-----------Services-----------*/
+#services {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/work.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #efefef !important;
+  background-attachment: fixed;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#services h1 {
+  text-align: center;
+  color: #efefef;
+  padding-bottom: 10px;
+}
+
+#services h1::after {
+  content: "";
+  background: #efefef;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+
+.services {
+  margin-top: 40px;
+}
+
+.icon {
+  font-size: 40px;
+  margin: 20px auto;
+  padding: 10px;
+  height: 80;
+  width: 80px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+#services p {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #ccc;
+}
+
+.services .col-md-3:hover {
+  background: #007bff;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+/*-----------Our Team------------*/
+#team {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #555;
+}
+
+.team-member {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 225px;
+  height: 225px;
+  border: 7px solid rgba(0, 0, 0, 0.1);
+}
+
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+
+.team-member p {
+  margin-top: 0;
+}
+
+/*----------Promo---------*/
+#promo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/promo.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 100px;
+  font-size: 38px;
+}
+
+/*------------Price Plan---------------*/
+
+#price {
+  text-align: center;
+  padding: 40px;
+  color: #555;
+}
+
+.pricingTable {
+  color: #fff;
+  background-color: #fff;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  padding: 0 0 20px;
+  margin: 0 20px;
+  border-radius: 10px 10px;
+}
+.pricingTable .pricingTable-header {
+  background: #ff793f;
+  padding: 10px 15px;
+  margin: 0 0 30px;
+  border-radius: 10px 10px 0 0;
+}
+.pricingTable .title {
+  font-size: 35px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+}
+.pricingTable .price-value {
+  background: #ff793f;
+  padding: 5px;
+  margin: 0 -10px 35px;
+  position: relative;
+}
+.pricingTable .price-value:before,
+.pricingTable .price-value:after {
+  content: "";
+  background: linear-gradient(to right top, transparent 48%, #cd6133 50%);
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+.pricingTable .price-value:after {
+  transform: rotateY(180deg);
+  left: auto;
+  right: 0;
+}
+.pricingTable .amount {
+  background: #ff793f;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 90px;
+  height: 100px;
+  width: 100px;
+  margin: -25px auto;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 4px #cd6133;
+  display: block;
+}
+.pricingTable .amount span {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 3px 0 0;
+}
+.pricingTable .pricing-content {
+  padding: 0;
+  margin: 0 -10px 30px;
+  list-style: none;
+  box-shadow: -10px 0 0 0 #cd6133 inset, 10px 0 0 0 #cd6133 inset;
+}
+.pricingTable .pricing-content li {
+  background: #ff793f;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 25px;
+  padding: 5px 0;
+  margin-bottom: 3px;
+  position: relative;
+}
+.pricingTable .pricingTable-signup a {
+  color: #fff;
+  background: #ff793f;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 0;
+  margin: 0 -10px;
+  display: block;
+  position: relative;
+  transition: all 0.3s;
+}
+.pricingTable .pricingTable-signup a:hover {
+  letter-spacing: 5px;
+  text-shadow: 5px 0px 1px rgba(0, 0, 0, 0.3);
+}
+.pricingTable .pricingTable-signup a:before,
+.pricingTable .pricingTable-signup a:after {
+  content: "";
+  background: linear-gradient(to right top, transparent 48%, #cd6133 50%);
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+.pricingTable .pricingTable-signup a:after {
+  transform: rotateY(180deg);
+  left: auto;
+  right: 0;
+}
+.pricingTable.blue .pricingTable-header,
+.pricingTable.blue .price-value,
+.pricingTable.blue .amount,
+.pricingTable.blue .pricing-content li,
+.pricingTable.blue .pricingTable-signup a {
+  background: #34ace0;
+}
+.pricingTable.blue .pricing-content {
+  box-shadow: -10px 0 0 0 #227093 inset, 10px 0 0 0 #227093 inset;
+}
+.pricingTable.blue .price-value:before,
+.pricingTable.blue .price-value:after,
+.pricingTable.blue .pricingTable-signup a:before,
+.pricingTable.blue .pricingTable-signup a:after {
+  background: linear-gradient(to right top, transparent 48%, #227093 50%);
+}
+.pricingTable.blue .amount {
+  box-shadow: 0 0 1px 4px #227093;
+}
+.pricingTable.purple .pricingTable-header,
+.pricingTable.purple .price-value,
+.pricingTable.purple .amount,
+.pricingTable.purple .pricing-content li,
+.pricingTable.purple .pricingTable-signup a {
+  background: #706fd3;
+}
+.pricingTable.purple .pricing-content {
+  box-shadow: -10px 0 0 0 #474787 inset, 10px 0 0 0 #474787 inset;
+}
+.pricingTable.purple .price-value:before,
+.pricingTable.purple .price-value:after,
+.pricingTable.purple .pricingTable-signup a:before,
+.pricingTable.purple .pricingTable-signup a:after {
+  background: linear-gradient(to right top, transparent 48%, #474787 50%);
+}
+.pricingTable.purple .amount {
+  box-shadow: 0 0 1px 4px #474787;
+}
+@media only screen and (max-width: 990px) {
+  .pricingTable {
+    margin: 0 20px 40px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .pricingTable {
+    margin: 0 0 40px;
+  }
+}
+
+/*--------------Testimonials---------------------*/
+
+/*-------------Contact--------------*/
+#contact {
+  padding: 40px;
+}
+
+section#contact {
+  background-color: #212529;
+  background-image: url("img/map-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section#contact .section-heading {
+  color: #fff;
+}
+
+section#contact .form-group {
+  margin-bottom: 25px;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+  padding: 20px;
+}
+
+section#contact .form-group input.form-control {
+  height: auto;
+}
+
+section#contact .form-group textarea.form-control {
+  height: 248px;
+}
+
+section#contact .form-control:focus {
+  border-color: #fed136;
+  box-shadow: none;
+}
+
+section#contact ::-webkit-input-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+section#contact :-moz-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+section#contact ::-moz-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+section#contact :-ms-input-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/*-------------------Footer------------------*/
+#footer {
+  padding: 40px;
+}
+
+.footer {
+  padding: 25px 0;
+  text-align: center;
+}
+
+.footer span.copyright {
+  font-size: 90%;
+  line-height: 40px;
+  text-transform: none;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.footer ul.quicklinks {
+  font-size: 90%;
+  line-height: 40px;
+  margin-bottom: 0;
+  text-transform: none;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 50px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s;
+  color: white;
+  border-radius: 100%;
+  outline: none;
+  background-color: #212529;
+}
+
+ul.social-buttons li a:active,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:hover {
+  background-color: #007bff;
+}
